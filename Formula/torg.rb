@@ -3,22 +3,23 @@
 class Torg < Formula
   desc "Org-mode–flavored terminal text editor"
   homepage "https://github.com/systemhalted/torg"
-  version "0.2.2"
+  version "0.2.3"
   license "GPL-2.0-or-later"
 
   on_macos do
     on_arm do
-      url "https://github.com/systemhalted/torg/releases/download/v0.2.2/torg-v0.2.2-aarch64-apple-darwin.tar.gz"
-      sha256 "7826e6828d7fc404942a6d79acf3cbd6a8a29ecc3f398ef90b01518bfbd36f22"
+      url "https://github.com/systemhalted/torg/releases/download/v0.2.3/torg-v0.2.3-aarch64-apple-darwin.tar.gz"
+      sha256 "76cb13bb49d50b1a01ff8a838d6e722b11bcdb66a60ac355ecc0534305ad8398"
     end
     on_intel do
-      url "https://github.com/systemhalted/torg/releases/download/v0.2.2/torg-v0.2.2-x86_64-apple-darwin.tar.gz"
-      sha256 "d90493388ae3d4080ef0da350b3c3bb4d786534259d66a34e5dd70e262e00488"
+      url "https://github.com/systemhalted/torg/releases/download/v0.2.3/torg-v0.2.3-x86_64-apple-darwin.tar.gz"
+      sha256 "f663b132cb2a814c66aecfa53d91d267a943e9f365c2d918474b3e9dc5f52349"
     end
   end
 
   def install
     bin.install "torg"
+    man1.install "torg.1"
   end
 
   test do
